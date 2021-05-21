@@ -1,0 +1,59 @@
+.container-1, .container-2, .container-3, .container-4, .container-5{
+    border: solid black;
+    margin: 0px auto;
+    width: 75%;
+    text-align: center;
+}
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-pick-color, 
+.flex-blackjack-row1,.flex-blackjack-row2,.flex-blackjack-row3 {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;    
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.flex-blackjack-row1, .flex-blackjack-row2{
+    
+    background-color: green;
+    color: #ffff;
+}
+
+.flex-blackjack-row1 div{
+    border: solid black;
+    padding: 10px;
+    flex: 1;
+    text-align: center;
+    height: 350px;
+    width: 25%;
+}
+.flex-blackjack-row2 button{
+    border: 1px solid black;
+    padding: 10px;
+}
+.flex-blackjack-row2 div{
+    border: 1px solid black;
+    padding: 10px;
+}
+table th,td {
+    padding: 15px;
+    border: 1px solid black;
+}
+
+.flex-box-container-1 div{
+    display: flex;
+    padding: 10px;
+}
+
+.flex-box-container-2 img {
+    margin: 10px;
+    box-shadow: 10px 10px 8px 10px #888888;
+}
+.flex-box-rps img:hover{
+    box-shadow: 10px 10px 8px 10px purple;
+    margin: 30px;
+
+}
+
+
+

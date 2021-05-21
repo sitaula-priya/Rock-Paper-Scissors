@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="challenge-1/css/style.css " >
+        
+        <link rel="stylesheet" text="css" href="priya.css">
+        <title>challenge 1</title>
+
+   
+</head>
+<body>
+    <div class="container-1">
+        <h1> Challenge 1: Your Age in Days </h1>
+        <div class="flex-box-container-1">  
+
+            <div>
+                <button class="btn btn-primary" onClick="ageInDays()" >Click me</button>
+            </div>
+    
+           <div> 
+               <button class="btn btn-danger" onclick="reset()"> Reset</button>
+            </div>  
+
+        </div>
+         <div class="flex-box-container-1">
+           <div id="flex-box-result">  </div>
+
+         </div>
+     </div>
+
+   <div class="container-2">
+       <h2>Challenge 2: Age Generator</h2>
+       <button class="btn btn-warning" id="age-gen-button"onClick="generateAge()">Age Generator</button>
+       <div class="flex-box-container-2" id= "flex-age-gen">
+         </div>
+   </div>
+    
+   <div class="container-3">
+       <h1>Challenge 3: Rock, Paper, Scissors</h1>
+       <div class="flex-box-rps" id="flex-box-rps-div">
+           <img id="rock" src="photos/rock.jpg" height="150" width="150" onclick="rpsGame(this)">
+           <img id="paper" src="photos/paper.webp" height="150" width="150" onclick="rpsGame(this)">
+           <img id="scissors" src="photos/scissors.webp" height="150" width="150" onclick="rpsGame(this)">
+       </div>
+
+   </div>
+    <div class="container-4">
+        <h2 id="change-my-color"> Challenge 4: Change Buttons Color</h2>
+        <div class="flex-box-pick-color">
+            <form action="">
+                <select name="backdrop" id="background" onChange="buttonColorChange(this)">
+                <option value="random">Random</option>
+                <option value="blue">Blue</option>
+                <option value="red">Red</option>
+                <option value="yellow">yellow</option>
+                <option value="green">Green</option>
+                <option value="reset">Reset</option>
+                </select>
+            </form>
+            <button type="button" class="btn btn-primary"> Messenger</button>
+            <button class="btn btn-danger">Instagram</button>
+            <button class="btn btn-warning">Snapchat</button>
+            <button class="btn btn-sucess">Linked In</button>
+        </div>
+        
+
+    </div>
+    
+    <div class="container-5">
+        <h2>Challenge:Blackjack</h2>
+        <h3> <span id="blackjack-result">let's play</span> </h3>
+        <div class="flex-blackjack-row1">
+            <div id="your box">
+                <h2>You:<span id="your-blackjerk-result">0 </span> </h2>
+            </div>
+
+            <div id="dealer-box">
+                <h2>Dealer:<span id="dealer-blackjerk-result">0</span></h2>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row2">
+            <div>
+                <button class="btn-lg btn-primary mr-2" id="blackjack-hit-button">Hit</button>
+                <button class="btn-lg btn-warning mr-2"id="blackjack-stand-button">Stand</button>
+                <button class="btn-lg btn-danger mr-2"id="blackjack-deal-button">Deal</button>
+            </div>
+        </div>
+
+        <div class="flex-blackjack-row3">
+            <table style="border: 0px solid black;" >
+                <tr>
+                    <th>Wins</th>
+                    <th>Losses</th>
+                    <th>Draws</th>
+                </tr>
+
+                <tr>
+                    <td> <span id="wins">0</span> </td>
+                    <td> <span id="losses">0</span> </td>
+                    <td> <span id="draws">0</span> </td> 
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="home.js">
+    </script>
+</body>
+</html>
